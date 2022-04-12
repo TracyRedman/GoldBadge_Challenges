@@ -24,7 +24,6 @@
   <ItemGroup>
     <ProjectReference Include="..\01_ChallengeOne\ChallengeOne.Data\ChallengeOne.Data.csproj" />
     <ProjectReference Include="..\01_ChallengeOne\ChallengeOne.Repository\ChallengeOne.Repository.csproj" />
-    <ProjectReference Include="..\01_ChallengeOne\ChallengeOne.UI\ChallengeOne.UI.csproj" />
   </ItemGroup>
 
 </Project>
