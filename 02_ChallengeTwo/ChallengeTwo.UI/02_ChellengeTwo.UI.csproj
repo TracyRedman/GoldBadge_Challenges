@@ -11,7 +11,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>_02_ChellengeTwo.UI</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <!-- <Nullable>enable</Nullable> -->
   </PropertyGroup>
 
 </Project>

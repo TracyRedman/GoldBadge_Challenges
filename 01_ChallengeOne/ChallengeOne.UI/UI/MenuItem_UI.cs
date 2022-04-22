@@ -99,7 +99,6 @@ using System.Threading.Tasks;
         System.Console.WriteLine("Menu Item Enlist Form\n");
         System.Console.WriteLine("Enter Menu Item Name: ");
         newMenuItem.Name = Console.ReadLine();
-
         bool isSuccessful = _mRepo.AddMenuItemToDatabase(newMenuItem);
         if (isSuccessful)
         {

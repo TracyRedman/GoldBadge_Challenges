@@ -20,7 +20,6 @@ public class MenuItem_Test
             "Chicken"
         }, 2_49);
         
-
         var chickenSandwich = new MenuItem("Cconut Crusted Chicken Sandwich", "Coconut Crusted Chicken Thigh",
         new List<string>
         {
@@ -34,7 +33,6 @@ public class MenuItem_Test
         
         //Assert
         var isSuccessful = _mRepo.AddMenuItemToDatabase(rice);
-        var isSuccessful = _mRepo.AddMenuItemToDatabase(chickenSandwich);
         
         Assert.True(isSuccessful);
     }
@@ -74,15 +72,6 @@ public class MenuItem_Test
         //Assert
         Assert.Equal(expected, actual);
     }
-
-    [Fact]
-    public void DeleteMenuItem_ShouldReturn_True()
-    {
-        var userInputMenuItemsID = int.Parse(Console.ReadLine());
-
-        var expected = _mRepo.RemoveMenuItemFromDatabase(userInputMenuItemsID);
-
-        Assert.True(expected);
-    }
-
 }
+
+
