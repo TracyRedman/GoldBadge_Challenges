@@ -44,18 +44,6 @@ using System.Threading.Tasks;
             }
             return null;
         }
-
-    public bool UpdateBadgeData(int userKeyInput, Badge newBadgeData)
-        {
-            var oldBadgeData = GetBadgeByKey(userKeyInput);
-            if(oldBadgeData != null)
-            {
-                oldBadgeData.Name = newBadgeData.Name;
-                oldBadgeData.Doors = newBadgeData.Doors;
-                return true;
-            }
-            return false;
-        }
         public bool DeleteBadgeData (int userKeyInput)
         {
             var oldBadgeData = GetBadgeByKey(userKeyInput);
@@ -99,19 +87,4 @@ using System.Threading.Tasks;
             }
             return false;
         }
-        public bool RemoveAllDoors (int userKeyInput)
-        {
-            var badge = GetBadgeByKey (userKeyInput);
-            if (badge !=null)
-            {
-                badge.Doors = null;
-                return true;
-            }
-            return false;
-        }
-
-    public object GetDoors()
-    {
-        throw new NotImplementedException();
-    }
 }

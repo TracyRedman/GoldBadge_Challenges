@@ -45,8 +45,6 @@ public class Claim_Repository
         }
         return false;
     }
-
-
     //two datetimes (parameters)
     //DateTime timeOfDay = new DateTime(2022,04,14); initial setup....
     //you can cmd+leftClick => To see metadata

@@ -4,7 +4,6 @@ public class ClaimQueue
     public Queue<Claim> SeedData()
     {
         Queue<Claim> claimsInLine = new Queue<Claim>();
-
         var claim1 = new Claim
         {
             ID = 1,
@@ -13,9 +12,7 @@ public class ClaimQueue
             Amount = 400_00m,
             OfIncident = new DateTime(2018, 04, 25),
             OfClaim = new DateTime(2018, 04, 27),
-
         };
-
         var claim2 = new Claim
         {
             ID = 2,
@@ -24,9 +21,7 @@ public class ClaimQueue
             Amount = 4000_00m,
             OfIncident = new DateTime(2018, 04, 11),
             OfClaim = new DateTime(2018, 04, 12),
-
         };
-
         var claim3 = new Claim
         {
             ID = 3,
@@ -35,9 +30,7 @@ public class ClaimQueue
             Amount = 4_00m,
             OfIncident = new DateTime(2018, 04, 27),
             OfClaim = new DateTime(2018, 06, 01),
-
         };
-
         var claim4 = new Claim
         {
             ID = 4,
@@ -46,15 +39,13 @@ public class ClaimQueue
             Amount = 2_000m,
             OfIncident = new DateTime(2018, 04, 27),
             OfClaim = new DateTime(2018, 04, 28),
-
         };
-
+        
         claimsInLine.Enqueue(claim1);
         claimsInLine.Enqueue(claim2);
         claimsInLine.Enqueue(claim3);
         claimsInLine.Enqueue(claim4);
         return claimsInLine;
-
     
         // foreach (Claim claim in claimsInLine)
         // {

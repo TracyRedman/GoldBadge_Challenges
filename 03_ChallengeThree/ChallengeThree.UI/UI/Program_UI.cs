@@ -12,7 +12,6 @@ public class Program_UI
         Seed();
         RunApplication();
     }
-
     private void RunApplication()
     {
         bool isRunning = true;
@@ -113,10 +112,6 @@ public class Program_UI
         Console.Clear();
 
         var availBadges = _bRepo.GetBadges();
-        // foreach (var badge in availBadges.Values)
-        // {
-        //     DisplayBadgeInfo(badge);
-        // }
         System.Console.WriteLine("Please enter a valid Badge ID to update:");
         var userKeyInput = int.Parse(Console.ReadLine());
         var userSelectedBadge = _bRepo.GetBadgeByKey(userKeyInput);
@@ -124,17 +119,6 @@ public class Program_UI
         if (userSelectedBadge != null)
         {
             Console.Clear();
-            //  var newBadge = new Badge();
-            //  var currentDoors = _bRepo.GetDoors();
-
-            //   System.Console.WriteLine("Please enter a Badge Name");
-            //  newBadge.Name = Console.ReadLine();
-
-            //    bool hasAssignedDoors = false;
-            //  while (!hasAssignedDoors)
-            //   {
-            Console.Clear();
-            //   System.Console.WriteLine("${userKeyInput} has access to doors {userInputDoors}");
 
             System.Console.WriteLine("What would you like to update?\n" +
             "1. Add door\n" +
@@ -159,7 +143,6 @@ public class Program_UI
         {
             System.Console.WriteLine($"Sorry the Badge with the ID: {userKeyInput} does not exist");
         }
-
         PressAnyKeyToContinue();
     }
     private void ListAllBadgesInDictionary()

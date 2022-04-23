@@ -21,4 +21,10 @@
     </PackageReference>
   </ItemGroup>
 
+    <ItemGroup>
+    <ProjectReference Include="..\02_ChallengeTwo\ChallengeTwo.Data\ChallengeTwo.Data.csproj" />
+    <ProjectReference Include="..\02_ChallengeTwo\ChallengeTwo.Repository\ChallengeTwo.Repository.csproj" />
+    <ProjectReference Include="..\02_ChallengeTwo\ChallengeTwo.UI\ChallengeTwo.UI.csproj" />
+  </ItemGroup>
+
 </Project>

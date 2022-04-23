@@ -24,7 +24,6 @@ using System.Threading.Tasks;
             "2. Add New Item to Database\n"+
             "3. Delete Menu Item\n"+
             "4. Exit");
-            
             var userInput = Console.ReadLine();
 
             switch (userInput)

@@ -137,7 +137,6 @@ public class Program_UI
         {
             _cRepo.AddClaimToQueue(claim);
         }
-        
     }
 }
 //seed data method grabbing a queue collection from another file 
