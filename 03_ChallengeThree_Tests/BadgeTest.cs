@@ -33,7 +33,6 @@ public class BadgeTest
         var actual = _bRepo.GetBadgeByKey(1);
         Assert.Equal(expectedName, actual.Name);
     }
-
     private void Seed()
     {
         Console.Clear();

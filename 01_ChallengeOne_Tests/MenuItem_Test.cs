@@ -76,12 +76,14 @@ public class MenuItem_Test
     public void GetMenuItemByID_ShouldReturnCorrectID_True()
     {
         var rice = new MenuItem("Rice");
+        MenuItem_Repository _mRepo = new MenuItem_Repository();
         _mRepo.GetMenuItemByID(1);
-        var menuItem = _mRepo.GetMenuItemByID(2);
+        var menuItem = _mRepo.GetMenuItemByID(1);
         var actual = menuItem.ID;
-        var expected = 2;
+        var expected = 1;
         Assert.Equal(expected, actual);
     }
 }
+
 
 
